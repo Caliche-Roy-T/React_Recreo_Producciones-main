@@ -1,0 +1,38 @@
+.social-icon {
+  font-size: 2.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-8px) scale(1.15);
+}
+
+.whatsapp {
+  color: #25D366;
+}
+
+.facebook {
+  color: #1877F2;
+}
+
+.instagram {
+  color: #cd2071;
+}
+
+.tiktok {
+  color: #ffffff;
+}
+#center {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  place-content: center;
+  place-items: center;
+  flex-grow: 1;
+
+  @media (max-width: 1024px) {
+    padding: 32px 20px 24px;
+    gap: 18px;
+  }
+}

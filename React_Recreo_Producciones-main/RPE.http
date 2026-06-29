@@ -1,0 +1,6 @@
+@RPE_HostAddress = http://localhost:5183
+
+GET {{RPE_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

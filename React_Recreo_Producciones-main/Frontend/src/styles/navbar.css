@@ -1,0 +1,25 @@
+.dropdown:hover .dropdown-menu {
+    display: block !important;
+}
+.dropdown-menu {
+  margin-top: 0 !important;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffd700 !important;
+}
+
+.dropdown-hover:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+  border-radius: 0;
+}

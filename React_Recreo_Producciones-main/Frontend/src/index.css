@@ -1,0 +1,253 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+.navbar img {
+  object-fit: contain;
+}
+.navbar-lineas {
+  display: flex;
+  align-items: center; /* líneas */
+}
+.texto-bienvenida {
+  max-width: 1000px; /* Ajusta entre 700 y 900px */
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.2rem;
+
+}
+
+.texto-bienvenida1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #084480;
+}
+.titulo-decoracion {
+  color: #27e6de; /* azul */
+  text-decoration: none;
+  border-bottom: none;
+  box-shadow: none;
+
+}
+.img-galeria {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-galeria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* MODAL (imagen grande) */
+.modal-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.modal-img img {
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.texto-despedida1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #bb9900;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}
+
+
+/*FOOTER*/
+
+
+footer {
+  background-color: #0b3c6d;
+  color: white;
+  padding: 40px 20px 20px;
+}
+
+/* fila principal */
+footer .row {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* columnas */
+footer h5 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* quitar estilo bootstrap raro */
+footer .nav {
+  padding: 0;
+}
+
+footer .nav-item {
+  margin-bottom: 8px;
+}
+
+/* links */
+footer a.nav-link {
+  color: #cfd8dc !important;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+footer a.nav-link:hover {
+  color: #ffffff !important;
+  transform: translateX(3px);
+}
+
+/* responsive spacing */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+  }
+
+  footer .nav {
+    align-items: center;
+  }
+}
+
+.footer-bottom {
+  background: #27e6de;
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  
+}
+
+.vet-nos {
+  border-radius: 0%;
+}
+
+.vet-nos-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  background: #08e50f;
+}
