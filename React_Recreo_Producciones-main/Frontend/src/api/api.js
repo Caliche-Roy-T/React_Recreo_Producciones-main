@@ -1,3 +1,6 @@
-export const api = () => {
-    return ("https://localhost:7188/")
-}
+import axios from "axios";
+
+export const api = axios.create ({
+    baseURL: "https://localhost:7188/Api",
+});
+
