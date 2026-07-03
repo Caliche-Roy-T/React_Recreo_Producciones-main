@@ -18,7 +18,7 @@ function Decoracion() {
 
   const [selectedImg, setSelectedImg] = useState(null);
 
-  const images = [
+  const decoraciones = [
     decoracion1, decoracion4, decoracion7, decoracion10,
     decoracion2, decoracion5, decoracion8, decoracion11,
     decoracion3, decoracion6, decoracion9, decoracion12
@@ -27,7 +27,7 @@ function Decoracion() {
   return (
     <div className="container py-5">
 
-      {/* TEXTO INICIO */}
+
       <div className="text-center mb-4">
 
         <h2 className="titulo-decoracion">
@@ -45,11 +45,11 @@ function Decoracion() {
 
       {/* GALERÍA */}
       <div className="row g-4">
-        {images.map((img, index) => (
+        {decoraciones.map((img, index) => (
           <div key={index} className="col-6 col-md-3">
             <img
               src={img}
-              alt="evento"
+              alt={`Decoracion ${index +1}`}
               className="img-galeria"
               onClick={() => setSelectedImg(img)}
             />

@@ -1,8 +1,8 @@
 import "../styles/inicio.css";
-import fondo from "../assets/images/fondo.jpeg";
 import fiestas from "../assets/images/fiestas.jpg";
 import inicio1 from "../assets/images/inicio1.png";
 import inicio2 from "../assets/images/inicio2.png";
+import "../styles/galeria.css";
 
 
 function Inicio() {
@@ -73,11 +73,7 @@ function Inicio() {
       <img
         src={fiestas}
         alt="Fiestas"
-        style={{
-          width: "18rem",
-          borderRadius: "15px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.2)"
-        }}
+        className="imagen-fiesta"
       />
     </div>
 
@@ -85,24 +81,16 @@ function Inicio() {
       <img
         src={fiestas}
         alt="Fiestas"
-        style={{
-          width: "18rem",
-          borderRadius: "15px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.2)"
-        }}
-      />
+        className="imagen-fiesta"
+        />
     </div>
 
     <div className="col-md-4 d-flex justify-content-center">
       <img
         src={fiestas}
         alt="Fiestas"
-        style={{
-          width: "18rem",
-          borderRadius: "15px",
-          boxShadow: "0 10px 25px rgba(0,0,0,0.2)"
-        }}
-      />
+        className="imagen-fiesta"
+        />
       <p></p>
     </div>
 
